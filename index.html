@@ -1,0 +1,9 @@
+```batch
+@echo off
+echo Configuring your nothing.real browser...
+rem Set DuckDuckGo as homepage
+echo user_pref("browser.startup.homepage", "https://duckduckgo.com"); >> nothing.real\Data\profile\user.js
+rem Set strict tracking protection
+echo user_pref("privacy.trackingprotection.enabled", true); >> nothing.real\Data\profile\user.js
+echo user_pref("privacy.trackingprotection.pbmode.enabled", true); >> nothing.real\Data\profile\user.js
+rem Enable fingerprint resistance
